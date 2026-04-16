@@ -1,0 +1,26 @@
+{
+  "name": "nexus-x-cli",
+  "version": "1.0.0",
+  "description": "CLI for NEXUS-X Developer Intelligence Platform",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "nexus": "./bin/nexus.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nexus-x",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ora": "^8.0.1",
+    "ws": "^8.20.0"
+  }
+}

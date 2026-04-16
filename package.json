@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
+    "start:fail": "node server.js --fail",
+    "render:start": "node cli/bin/nexus.js init && node cli/bin/nexus.js connect \"$NEXUS_BACKEND_URL\" \"$NEXUS_REMOTE\" && node cli/bin/nexus.js run -- node server.js",
+    "render:start:fail": "node cli/bin/nexus.js init && node cli/bin/nexus.js connect \"$NEXUS_BACKEND_URL\" \"$NEXUS_REMOTE\" && node cli/bin/nexus.js run -- node server.js --fail",
     "success": "node index.js",
     "fail": "node index.js --fail",
     "noisy-fail": "node index.js --fail --noisy"
