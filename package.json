@@ -1,0 +1,12 @@
+{
+  "name": "testm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "success": "node index.js",
+    "fail": "node index.js --fail",
+    "noisy-fail": "node index.js --fail --noisy"
+  }
+}
